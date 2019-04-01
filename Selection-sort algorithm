@@ -1,0 +1,13 @@
+#selection sort
+
+def Selection_sort(list):
+    for i in range(len(list)):
+        min_value = min(list)
+        min_ind = list.index(min_value)
+        list[i],list[min_ind] = list[min_ind],list[i]
+        return list
+    return list
+    
+list = [1,0,5,6,85,66]
+print(Selection_sort(list))
+        
