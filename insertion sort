@@ -1,0 +1,14 @@
+def insertionSort(list):
+    for index in range(1,len(list)):
+        currentvalue = list[index]
+        position = index
+        while position>0 and list[position-1]>list[position]:
+            list[position] = list[position-1]
+            position = position-1
+        list[position] = currentvalue
+list = [21,30,56,5,1]
+insertionSort(list):
+print(list)
+
+
+o/p:  [1,5,21,30,56]
